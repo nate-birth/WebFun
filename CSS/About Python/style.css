@@ -1,0 +1,174 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: 1px dotted red;
+}
+#wrapper{
+    width: 970px;
+    overflow: hidden;
+    height: auto;
+}
+#content-top{
+    background-color: #235077;
+    padding: 5px;
+}
+#header{
+    margin: 5px;
+}
+    #header > img{
+        height: 95px;
+    }
+    #header > div{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 345px;
+    }
+        #header p{
+            display: inline-block;
+            color: white;
+            font-size: 12px;
+            margin-left: 100px;
+            padding: 5px 0px;
+        }
+            #header span{
+                color: black;
+            }
+            #header a{
+                color: rgb(254,211,47);
+            }
+        #header form{
+            background-color: #444444;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            padding: 15px 30px;
+        }
+            #header input{
+                text-align: center;
+                padding: 5px;
+            }
+                #header input::placeholder{
+                    color: lightgrey;
+                    font-size: 8pt;
+                }
+            #header button{
+                background-color: rgb(35,80,119);
+                color: white;
+                padding: 5px 10px;
+                border: 2px solid lightgrey;
+                border-style: outset;
+                border-radius: 4px;
+                font-size: 10px;
+            }
+#nav-bar{
+    background-color: rgb(69,125,173);
+    padding: 10px;
+    margin: 0px 30px 0px 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+    #nav-bar ul{
+        list-style-type: none;
+        text-align: center;   
+    }
+    #nav-bar li{
+        display: inline;
+        font-size: 15pt;
+        padding: 0px 25px;
+    }
+    #nav-bar a{
+        color: white;
+        text-decoration: none;
+    }
+#main-content {
+    padding-left: 60px;
+}
+    #main-content ul, #main-content div{
+        padding: 10px;
+        display: inline-block;
+    }
+    #main-content ul{
+        vertical-align: top;
+        text-align: center;
+        list-style: none;
+        margin-left: 10px;
+    }
+        #main-content li{
+            padding: 5px 0px;
+        }
+        #main-content ul li::before{
+            content: ' \00BB';
+            color: rgb(254,211,47);
+    }
+    #main-content a{
+        color: white;
+    }
+    #main-content div{
+        width: 680px;
+        text-align: center;
+    }
+    #main-content p{
+        color: white;
+        padding: 5px;
+    }
+    #main-content .yellow{
+        color: rgb(254,211,47);
+        font-style: italic;
+        font-size: 14pt;
+    }
+#content-bottom{
+    padding: 0px 30px 5px;
+    margin-left: 25px;
+}
+    .info-box{
+        display: inline-block;
+        vertical-align: top;
+        width: 430px;
+        text-align: center;
+        padding: 5px 0px 5px 10px;
+    }
+        .info-box hr{
+            border: 2px solid rgb(115,167,213);
+            margin: 3px;
+        }
+        .info-box div{
+            width: 330px;
+            margin-left: 20px;
+            font-weight: lighter;
+        }
+        .info-box ul{
+            width: 270px;
+            margin-left: 40px;
+            list-style: square;
+        }
+        .info-box li, .info-box p, .info-box h4{
+            padding: 2px;
+        } 
+        .info-box a{
+            color: rgb(131,177,218);
+            text-decoration: none;
+        }
+#footer{
+    background-image: linear-gradient(rgb(40,84,122), rgb(60,122,175));
+    padding-top: 40px;
+}
+    #footer ul{
+        list-style-type: none;
+        text-align: center;
+    }
+    #footer li{
+        display: inline-block;
+        padding: 10px 25px;
+        
+    }
+    #footer a{
+        text-decoration: none;
+        color: rgb(131,177,218);
+        font-size: 14pt;
+    }
+    #footer p{
+        text-align: center;
+        color: rgb(131,177,218);
+        font-size: 9pt;
+        padding: 3px;
+    }

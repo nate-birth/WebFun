@@ -1,0 +1,28 @@
+.fun-section{
+    border-bottom: 2px solid black;
+}
+.fun-section > div{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px 50px;
+}
+.fun-section.shown p{
+    display: none;
+}
+.sldown h1, .sldown p{
+    display: none;
+}
+.sltoggle img{
+    display: none;
+    width: 90px;
+}
+.fade-in span{
+    display: none;
+}
+#fadeoutspan{
+    display: none;
+}
+.crimson {
+    color: crimson;
+    font-weight: bold;
+}

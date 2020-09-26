@@ -1,0 +1,42 @@
+/* *{
+    outline: 1px dotted red;
+} */
+
+#wrapper{
+    width: 970px;
+    height: 1000px;
+    margin: 0 auto;
+}
+#header{
+    padding: 15px;
+}
+#header > h1, #header > h2{
+    display: inline-block;
+    margin: 0;
+}
+#header > h2{
+    margin-left: 415px;
+}
+#main_content{
+    background-color: #644f59;
+    height: 970px;
+    padding: 25px;
+}
+#main-content-top > img{
+    width: 400px;
+    margin-right: 25px;
+}
+#main-content-top > div{
+    width: 470px;
+}
+.info-block{
+    display: inline-block;
+    vertical-align: top;
+    background-color: beige;
+}
+.info-block > h3 {
+    background-color: silver;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}

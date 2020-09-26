@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, p{
+    margin: 5px;
+    padding: 20px;
+    width: auto;
+}
+h1{
+    background-color: gray;
+    font-weight: lighter;
+}
+p{
+    background-color: darkgray;
+    border: 1px solid gray;
+}
+.yellow{
+    background-color: #FFFF9A;
+}
+.yellow span{
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px){
+    .yellow.phone{
+        display: block;
+    }
+    .yellow.tablet{
+        display: none;
+    }
+    .yellow.desktop{
+        display: none;
+    }
+}
+@media only screen and (min-width: 481px){
+    .yellow.phone{
+        display: none;
+    }
+    .yellow.tablet{
+        display: block;
+    }
+    .yellow.desktop{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px){
+    title:after{
+        content: "Desktop";
+    }
+    .yellow.phone{
+        display: none;
+    }
+    .yellow.tablet{
+        display: none;
+    }
+    .yellow.desktop{
+        display: block;
+    }
+}

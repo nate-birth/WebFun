@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Intro to the DOM</title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+  <!-- This is an example of applying the .on functionality to an element rather than the document -->
+  
+  <!-- <script>
+    $(document).ready(function(){
+      $('button').click(function(){
+        $('div').append('<h3>I am a new content</h3>');
+      });
+      $('div.a').on('mouseover', 'h3', function(){
+        $(this).css('color', 'pink');
+      });
+    });
+  </script>
+  <body>
+    <button>Click me for new content!</button>
+    <div class='a'>
+     <h3>I am old content</h3>
+    </div>
+    <div class='b'>
+     <h3>I am old content</h3>
+    </div>
+  </body> -->
+
+  <!-- Call back functionality -->
+
+  <!-- <script>
+    function attach_h3_handlers(){
+      $('h3').click(function(){
+        alert('You clicked an H3!');
+      });
+    }
+    $(document).ready(function() {
+
+      attach_h3_handlers();
+      
+      $('button').click(function() {
+        $('div').append('<h3>I am a dynamically generated H3</h3>');
+        attach_h3_handlers();
+      });
+    });
+</script>
+<body>
+    <div>
+        <button>Click me to add a new H3 tag!</button>
+        <h3>Click me to see a message!</h3>
+    </div>
+</body> -->
+
+<!-- TRAVERSING -->
+
+<!-- <script>
+  $(document).ready(function() {
+    // $('#myDiv').children().css('background-color', 'green');
+          // All children of #myDiv will have the green background
+    // $('#myDiv').children('h3').css('background-color', 'green');
+          // only the h3 childern will have the green background.
+    // $('h3, p').click(function(){
+    //   $(this).parent().append('<h2>HOWDY CODING DOJO!</h2>');
+    // })
+          // This appends to the parent of either the h3 or p that is clicked.
+    $('h3, p').click(function(){
+      $(this).siblings().hide();
+    })
+      // This hides all siblings of the element clicked.
+
+
+  });
+</script>
+<body>
+  <div id='myDiv'>
+    <p>Here is a paragraph.  It is a beautiful paragraph.</p>
+    <h3>Michael Choi</h3>
+    <h3>John Supsupin</h3>
+    <h3>Trey Villafane</h3>
+</div>
+</body> -->
+
+<!-- Traversing 2 with chaining -->
+  <script>
+    $(document).ready(function(){
+      $('button').click(function(){
+        $(this).siblings().children().children().text('Michael Choi was here!')
+        // This chains the sibling to the children to the children (ul > li > h3) and then changes the text.
+      })
+    })
+  </script>
+  <body>
+    <div>
+      <button>Click me for crazy things!</button>
+      <ul>
+          <li><h3>Tiger Woods</h3></li>
+          <li><h3>Phil Mickelson</h3></li>
+          <li><h3>Ben Hogan</h3></li>
+          <li><h3>Jack Nicklaus</h3></li>
+          <li><h3>Gary Player</h3></li>
+          <li><h3>Rory Mcilroy</h3></li>
+      </ul>
+   </div>
+  </body>
+
+</html>

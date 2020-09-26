@@ -1,0 +1,10 @@
+.stuff{
+    margin: 40px;
+    /* can be left right top bottom or specified all or inline*/
+}
+/* id will start with a hashtag, class will start with a .*/
+/* ids are supposed to be for one element, Class can be applied to many throughout the file. */
+
+a {
+    color: red;
+}

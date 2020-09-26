@@ -1,0 +1,11 @@
+#wrapper {
+    width: 970px;
+}
+.pic {
+    width: 239px;
+}
+#btn {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}

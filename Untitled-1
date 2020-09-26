@@ -1,0 +1,21 @@
+>grep password= S_txt
+>grep password= T_txt
+>grep password= U_txt
+back to the table, half hoping she might find password=IHTFP another key on it, or at 
+>grep password= V_txt
+>grep password= W_txt
+>cd ..
+You have moved to KernelFiles. The KernelFiles hold the sudo-secret (no, not pseudo). You'd better read the Instructions.
+>ls
+ Locations: 
+MoreKernelFiles
+ Items: 
+Certificate
+Instructions
+>sudo less Certificate
+Password:
+>IHTFP
+You have correctly entered the password. You are now in Paradise. Take a look around, and congratulations.
+>ls
+ Locations: 
+There's really nothing interesting in Paradise.
